@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Nat20DiceRoller.MainPage"
+             BackgroundColor="#02011a">
+    <Grid ColumnDefinitions="AUto"
+          RowDefinitions="AUto,Auto,Auto,*,Auto,Auto"
+          RowSpacing="5"
+          HorizontalOptions="Center">
+
+        <HorizontalStackLayout Grid.Column="0" Grid.Row="0" HorizontalOptions="Center" Spacing="5">
+            <Button x:Name="btnD2" Text="D2" WidthRequest="70" HeightRequest="70" Clicked="btnD2_Clicked" BackgroundColor="#87047c" CornerRadius="25" TextColor="Beige"/>
+            <Button x:Name="btnD4" Text="D4"  WidthRequest="70" HeightRequest="70" Clicked="btnD4_Clicked" BackgroundColor="#87047c" CornerRadius="25" TextColor="Beige"/>
+            <Button x:Name="btnD6" Text="D6"  WidthRequest="70" HeightRequest="70" Clicked="btnD6_Clicked" BackgroundColor="#87047c" CornerRadius="25" TextColor="Beige"/>
+            <Button x:Name="btnD8" Text="D8"  WidthRequest="70" HeightRequest="70" Clicked="btnD8_Clicked" BackgroundColor="#87047c" CornerRadius="25" TextColor="Beige"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Grid.Column="0" Grid.Row="1" HorizontalOptions="Center" Spacing="5">
+            <Button x:Name="btnD10" Text="D10"  WidthRequest="70" HeightRequest="70" Clicked="btnD10_Clicked" CornerRadius="25" BackgroundColor="#87047c" TextColor="Beige"/>
+            <Button x:Name="btnD12" Text="D12"  WidthRequest="70" HeightRequest="70" Clicked="btnD12_Clicked" CornerRadius="25" BackgroundColor="#87047c" TextColor="Beige"/>
+            <Button x:Name="btnD20" Text="D20"  WidthRequest="70" HeightRequest="70" Clicked="btnD20_Clicked" CornerRadius="25" BackgroundColor="#87047c" TextColor="Beige"/>
+            <Button x:Name="btnD100" Text="D100"  WidthRequest="70" HeightRequest="70" Clicked="btnD100_Clicked" CornerRadius="25" BackgroundColor="#87047c" TextColor="Beige"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Grid.Column="0" Grid.Row="2" Spacing="8" HorizontalOptions="Center">
+            <Button x:Name="btnPlusDice" Text="+" Clicked="btnPlusDice_Clicked" CornerRadius="25" BackgroundColor="#048a3c" TextColor="Beige"/>
+            <Label x:Name="lblDiceNum" Text="1D" VerticalOptions="Center" WidthRequest="40" HorizontalTextAlignment="Center" TextColor="Beige"/>
+            <Button x:Name="btnMinusDice" Text="-" Clicked="btnMinusDice_Clicked"  CornerRadius="25" BackgroundColor="#c23a04" TextColor="Beige"/>
+
+            <Button x:Name="btnPlusMod" Text="+" Clicked="btnPlusMod_Clicked"  CornerRadius="25" BackgroundColor="#048a3c" TextColor="Beige"/>
+            <Label x:Name="lblModNum" Text="+2" VerticalOptions="Center" WidthRequest="40" HorizontalTextAlignment="Center" TextColor="Beige"/>
+            <Button x:Name="btnMinusMod" Text="-" Clicked="btnMinusMod_Clicked"  CornerRadius="25" BackgroundColor="#c23a04" TextColor="Beige"/>
+        </HorizontalStackLayout>
+        <Label Grid.Column="0" Grid.Row="3" x:Name="lblResult" Text="20" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold" FontSize="100"  TextColor="Beige"/>
+        <Label Grid.Column="0" Grid.Row="4" x:Name="lblFormula" HorizontalOptions="Center" FontSize="40" VerticalOptions="Center" Text="1D20 + 3"  TextColor="Beige"/>
+        <Label Grid.Column="0" Grid.Row="5" x:Name="lblRolls" HorizontalOptions="Center" FontSize="20" VerticalOptions="Center" Text="17" MaximumWidthRequest="300" LineBreakMode="CharacterWrap" TextColor="Beige"/>
+
+    </Grid>
+
+    
+</ContentPage>
