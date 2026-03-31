@@ -26,12 +26,12 @@
             <Button x:Name="btnMinusDice" Text="-" Clicked="btnMinusDice_Clicked"  CornerRadius="25" BackgroundColor="#c23a04" TextColor="Beige"/>
 
             <Button x:Name="btnPlusMod" Text="+" Clicked="btnPlusMod_Clicked"  CornerRadius="25" BackgroundColor="#048a3c" TextColor="Beige"/>
-            <Label x:Name="lblModNum" Text="+2" VerticalOptions="Center" WidthRequest="40" HorizontalTextAlignment="Center" TextColor="Beige"/>
+            <Label x:Name="lblModNum" Text="+1" VerticalOptions="Center" WidthRequest="40" HorizontalTextAlignment="Center" TextColor="Beige"/>
             <Button x:Name="btnMinusMod" Text="-" Clicked="btnMinusMod_Clicked"  CornerRadius="25" BackgroundColor="#c23a04" TextColor="Beige"/>
         </HorizontalStackLayout>
-        <Label Grid.Column="0" Grid.Row="3" x:Name="lblResult" Text="20" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold" FontSize="100"  TextColor="Beige"/>
-        <Label Grid.Column="0" Grid.Row="4" x:Name="lblFormula" HorizontalOptions="Center" FontSize="40" VerticalOptions="Center" Text="1D20 + 3"  TextColor="Beige"/>
-        <Label Grid.Column="0" Grid.Row="5" x:Name="lblRolls" HorizontalOptions="Center" FontSize="20" VerticalOptions="Center" Text="17" MaximumWidthRequest="300" LineBreakMode="CharacterWrap" TextColor="Beige"/>
+        <Label Grid.Column="0" Grid.Row="3" x:Name="lblResult" Text="" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold" FontSize="100"  TextColor="Beige"/>
+        <Label Grid.Column="0" Grid.Row="4" x:Name="lblFormula" HorizontalOptions="Center" FontSize="40" VerticalOptions="Center" Text=""  TextColor="Beige"/>
+        <Label Grid.Column="0" Grid.Row="5" x:Name="lblRolls" HorizontalOptions="Center" FontSize="20" VerticalOptions="Center" Text="" MaximumWidthRequest="300" LineBreakMode="CharacterWrap" TextColor="Beige"/>
 
     </Grid>
 
